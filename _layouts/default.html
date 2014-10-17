@@ -1,0 +1,11 @@
+{% include head.html %}
+<body>
+  <div role="main" class="main">
+    {{ content }}
+  </div>
+</body>
+{% include foot.html %}
+{% if page.math %}
+{% include mathjax.html %}
+{% endif %}
+</html>

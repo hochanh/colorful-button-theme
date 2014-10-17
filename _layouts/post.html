@@ -1,0 +1,26 @@
+---
+layout: default
+---
+<div class="pagination">
+<a href="/b" class="btn btn-red">{{ page.title }}</a>
+</div>
+
+{{ content }}
+
+<div class="pagination">
+  {% if page.next %}
+  <a class="btn btn-red" href="{{ page.next.url }}">
+  &lt;
+  </a>
+  {% else %}
+  <span class="btn btn-red disable">&lt;</span>
+  {% endif %}
+  <a class="btn btn-red disable">{{ page.date | date: "%d/%m" }}</a>  
+  {% if page.previous %}
+  <a class="btn btn-red" href="{{ page.previous.url }}">
+  &gt;
+  </a>
+  {% else %}
+  <span class="btn btn-red disable">&gt;</span>
+  {% endif %}
+</div>

@@ -1,0 +1,10 @@
+# Site settings
+title: cobutt-theme
+author: manhtai.com
+description: "#template"
+permalink: /b/:title/
+
+# Build settings
+markdown: kramdown
+exclude:
+ - README.md
